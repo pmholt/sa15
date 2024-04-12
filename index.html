@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Recipe Book</h1>
+    </header>
+
+    <main>
+        <input type="text" id="searchInput" placeholder="Search recipes..." oninput="filterRecipes()">
+
+
+        <section class="recipe" id="spaghetti">
+            <h2 onclick="toggleDetails('spaghetti')">Spaghetti and Meatballs</h2>
+            <img src="images/spaghetti.jpg.webp" alt="Spaghetti and Meatballs">
+            <div class="details">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>Spaghetti</li>
+                    <li>Meatballs</li>
+                    <li>Tomato sauce</li>
+                    <li>Grated Parmesan cheese</li>
+                </ul>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Cook spaghetti according to package instructions.</li>
+                    <li>Heat tomato sauce in a separate pan.</li>
+                    <li>Add cooked meatballs to the sauce and simmer for 10 minutes.</li>
+                    <li>Serve meatballs and sauce over cooked spaghetti, garnished with grated Parmesan cheese.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="recipe">
+            <h2>Chicken and Dumplings</h2>
+            <img src="images/chicken_dumplings.jpg.webp" alt="Chicken and Dumplings">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Chicken</li>
+                <li>Flour</li>
+                <li>Chicken broth</li>
+                <li>Milk</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook chicken in a pot until fully cooked.</li>
+                <li>Mix flour with chicken broth and milk to form a dough.</li>
+                <li>Drop spoonfuls of dough into the simmering chicken broth.</li>
+                <li>Cook until the dumplings are cooked through.</li>
+            </ol>
+        </section>
+
+        <section class="recipe">
+            <h2>Apple Pie</h2>
+            <img src="images/apple_pie.jpg.webp" alt="Apple Pie">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>Apples</li>
+                <li>Pastry dough</li>
+                <li>Sugar</li>
+                <li>Cinnamon</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Peel, core, and slice apples.</li>
+                <li>Line a pie dish with pastry dough.</li>
+                <li>Fill the pie with sliced apples mixed with sugar and cinnamon.</li>
+                <li>Cover with another layer of pastry dough and bake until golden brown.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Recipe Book</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
